@@ -837,7 +837,19 @@ async function salvarLead(data) {
 
   });
 
-
+  fetch("https://default05f387c9461b475d9655fec969d0c0.17.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/20/workflows/b53a819590124d74ad161a1324ff3a92/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=F69lhB3b5EXExoB5aIr82Fbkn557CMCV7t78cdwzURY", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(lead)
+  })
+    .then(r => {
+      console.log("Status:", r.status);
+      return r.text();
+    })
+    .then(console.log)
+    .catch(console.error);
   if (!response.ok) {
 
     const erro =
