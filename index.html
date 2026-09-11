@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EDA • Empreendedor de Design e Ambientes</title>
+
+  <link rel="stylesheet" href="style.css">
+<!-- Fábio Almeida - Add depois no stlye.css -->
+  <style>
+    .benefit-card {
+      position: relative;
+    }
+
+    .benefit-icon {
+      width: 28px;
+      height: 28px;
+      margin-bottom: 14px;
+      fill: none;
+      stroke: #ff3b4d;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .benefit-content {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <section class="form-shell">
+
+      <header class="brand">
+
+        <img src="imgs/logo.png" alt="Logo da ABC da Construção" class="logo">
+
+        <span class="cobranded-plus" id="cobranded-plus">+</span>
+
+        <span id="cobranded-tag" class="cobranded-tag azul-tag">
+          Você
+        </span>
+
+        <div class="brand-copy">
+          <strong>ABC DA CONSTRUÇÃO</strong>
+          <span>Qualificação de perfil</span>
+        </div>
+
+      </header>
+
+      <section class="hero">
+
+        <span class="hero-tag">
+          NOVA OPORTUNIDADE
+        </span>
+
+        <h1>
+          Torne-se um Empreendedor de Design e Ambientes
+        </h1>
+
+        <p>
+          Trabalhe com a força da maior Rede de Acabamentos do
+          Brasil ao seu lado.
+        </p>
+
+      </section>
+
+      <section class="benefits">
+
+        <div class="benefit-card">
+          <svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7v5l3.5 2"></path><path d="M12 3.5V2M20.5 12H22"></path></svg>
+          <div class="benefit-content">
+            <strong>Autonomia</strong>
+
+          <span>
+            Escolha como, quando e com quem trabalhar.
+          </span>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 12.5l2 2a2 2 0 0 0 2.8 0l4.7-4.7a2 2 0 0 0-2.8-2.8l-3.1 3.1"></path><path d="M8.5 12.5l-1.7 1.7a2 2 0 0 1-2.8-2.8l4.4-4.4a3 3 0 0 1 4.2 0l1 1"></path><path d="M4 15.5l2 2M7 18l1.5 1.5M16 5l2-2M18 7l2-2"></path></svg>
+          <div class="benefit-content">
+            <strong>Relacionamento</strong>
+
+          <span>
+            Sua carteira continua sendo seu maior ativo.
+          </span>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.8"></rect><path d="M8 20h8M12 16v4M7 8h10M7 11h6"></path></svg>
+          <div class="benefit-content">
+            <strong>Tecnologia</strong>
+
+          <span>
+            Ferramentas para organizar suas vendas.
+          </span>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5"></path><path d="M4 19h17"></path><path d="M7 15l4-4 3 2 6-7"></path><path d="M17 6h3v3"></path></svg>
+          <div class="benefit-content">
+            <strong>Resultados</strong>
+
+          <span>
+            Seu ganho acompanha o seu desempenho.
+          </span>
+          </div>
+        </div>
+
+      </section>
+
+      <form id="qualificationForm">
+
+        <div id="stepsContainer"></div>
+
+        <div class="actions">
+
+          <button
+            type="button"
+            class="btn secondary"
+            id="backBtn"
+          >
+            Voltar
+          </button>
+
+          <button
+            type="button"
+            class="btn primary"
+            id="nextBtn"
+          >
+            Quero Conversar →
+          </button>
+
+        </div>
+
+      </form>
+
+      <footer>
+
+        <span>ABC da Construção</span>
+
+        <span>•</span>
+
+        <span>
+          Você entra com sua experiência.
+          Nós entramos com a força da rede.
+        </span>
+
+      </footer>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
