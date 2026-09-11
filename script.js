@@ -58,15 +58,15 @@ const FORM_CONFIG = {
         {
           type: "text",
           id: "nomeFranqueado",
-          label: "Nome do Franqueado",
-          placeholder: "Digite o nome do franqueado",
+          label: "Nome do Franqueado que indicou você",
+          placeholder: "Digite o nome do franqueado que indicou você",
           required: true
         },
 
         {
           type: "city-state",
           id: "cidadeFranqueado",
-          label: "Cidade / UF do Franqueado",
+          label: "Cidade / UF do Franqueado que indicou você",
           placeholder: "Selecione a cidade do franqueado",
           required: true
         }
